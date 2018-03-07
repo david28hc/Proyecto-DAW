@@ -1,0 +1,46 @@
+.main-menu{
+    padding-top: 45%;
+}
+
+#formImg ol {
+  padding-left: 0;
+}
+
+#formImg li, div > p {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border: 1px solid black;
+}
+
+#formImg img {
+  height: 100px;
+  order: 1;
+}
+
+#formImg p {
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+#formImg label{
+  padding: 5px 10px;
+  border: 1px ridge black;
+}
+#formImg button {
+  padding: 5px 10px;
+  border: 1px ridge black;
+  margin-bottom: 2%;
+}
+
+#formImg label:hover, #formImg button:hover {
+  background-color: #2D5BA3;
+  color: white;
+}
+
+#formImg label:active, #formImg button:active {
+  background-color: #0D3F8F;
+  color: white;
+}

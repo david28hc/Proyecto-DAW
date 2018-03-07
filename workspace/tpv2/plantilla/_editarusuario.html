@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/x-icon" href="./app_images/favicon.ico">
+        <title>Tu Perfil</title>
+    </head>
+    <body>
+        
+        
+        <div class = 'si_logueado'>
+        
+            <div class = 'menu'>
+                
+                <figure>
+                   <img src='index.php?ruta=index&accion=veravatar' />  
+                    <figcaption>{{correo}}</figcaption>
+                </figure>
+            
+                <nav>
+                    <ul>
+                        <li><a href = "./">Inicio</a></li>
+                        <li><a href="?accion=editarusuario">Editar Perfil</a></li>
+                        <li>{{indexadministrador}}</li>
+                        <li><a href="?accion=cerrarsesion">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            
+            <div class = 'contenido'>
+                
+                <div class='formularioContenido'>
+                    
+                    
+                    <form enctype="multipart/form-data" method="post" action=".">
+                        
+                        <div class ='foto_titulo'>
+                            
+                            <img src='index.php?ruta=index&accion=veravatar' class = 'fotoEditar' />
+                            <h1>Tu Perfil</h1>
+                            
+                        </div>
+                        <div class = 'filaForm'>
+                            <label for="registroNombre">Nombre:</label>
+                            <input type="text" id='registroNombre' name="nombre" value = "{{nombre}}"/>
+                        </div>
+                    
+                        <div class = 'filaForm'>
+                            <label for="registroApellidos">Apellidos:</label>
+                            <input type="text" id='registroApellidos' name="apellidos" value = "{{apellidos}}"/>
+                        </div>
+                        
+                        <div class = 'filaForm'>
+                            <label for="registroNick">Nickname:</label>
+                            <input type="text" required id='registroNick' name="nick" value = "{{nick}}"/>
+                        </div>
+                        
+                        <div class = 'filaForm'>
+                            <label for="registroCorreo">Correo:</label>
+                            <input type="email" required id='registroCorreo' name="correo" value = "{{correo}}"/>
+                        </div>
+                        
+                        <div class = 'filaForm'>
+                            <label for="registroClave">Nueva Clave:</label>
+                             <input type="password"  id='registroClave' name="clave"/>
+                        </div>
+                        
+                        <div class = 'filaForm'>
+                            <label for="registroClaveRep">Repetir Clave:</label>
+                             <input type="password"  id='registroClaveRep' name="claveRepetida"/>
+                        </div>
+                        
+                        <div class = 'filaForm'>
+                            <label for="claveAnterior">Clave Actual:</label>
+                             <input type="password"  id='claveAnterior' name="claveAnterior"/>
+                        </div>
+                        
+                        
+                        <div class = 'filaForm'>
+                            <label for="avatar">Subir avatar:</label>
+                            <input type="file" id= 'avatar' name="avatar" />
+                        </div>
+                        
+                        
+                        <input type="hidden" name="accion" value="doeditarusuario"/>
+                        <input type="hidden" name="ruta" value="index"/>
+                        <input type="submit" value="Editar"/>
+                    </form>
+                    
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        
+        
+        
+    </body>
+</html>

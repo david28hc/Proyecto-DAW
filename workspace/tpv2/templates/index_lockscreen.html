@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <base href="{{base}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
+        
+        <!-- JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    
+    <body>
+        <div class="login" data-lbg="teal">
+            <div class="l-block toggled" id="l-lockscreen">
+                <!--
+                <div class="lb-header palette-Teal bg">
+                    <img src="img/profile-pics/1.jpg" class="avatar-img" alt="">
+                    Hi Malinda Hollway!
+                </div>-->
+                <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+                <!--        <div class="flex">-->
+                <!--                    <div class="c-item">-->
+                <!--                        <a href="#" class="ci-avatar">-->
+                <!--                            <img src="img/contacts/1.jpg" alt="" width=100px;>-->
+                <!--                        </a>-->
+
+                <!--                        <div class="c-info">-->
+                <!--                            <strong>Cathy Shelton</strong>-->
+                                            <!--<small>cathy.shelton31@example.com</small>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="c-footer">-->
+                <!--                            <button class="btn btn-primary btn-lg btn-block" id="boton">-->
+                <!--                                <i class="zmdi zmdi-person-add"></i> Add-->
+                <!--                            </button>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="c-item">-->
+                <!--                    <a href="#" class="ci-avatar">-->
+                <!--                            <img src="img/contacts/2.jpg" alt="" width=100px;>-->
+                <!--                        </a>-->
+
+                <!--                        <div class="c-info">-->
+                <!--                            <strong>Stella Flores</strong>-->
+                                            <!--<small>stella@example.com</small>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="c-footer">-->
+                <!--                            <button class="btn btn-primary btn-lg btn-block" id="boton">-->
+                <!--                                <i class="zmdi zmdi-person-add"></i> Add-->
+                <!--                            </button>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--        </div>-->
+                <!--        <div class="flex">-->
+                <!--                    <div class="c-item">-->
+                <!--                        <a href="#" class="ci-avatar">-->
+                <!--                            <img src="img/contacts/3.jpg" alt="" width=100px;>-->
+                <!--                        </a>-->
+
+                <!--                        <div class="c-info">-->
+                <!--                            <strong>Cathy Shelton</strong>-->
+                                            <!--<small>cathy.shelton31@example.com</small>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="c-footer">-->
+                <!--                            <button class="btn btn-primary btn-lg btn-block" id="boton">-->
+                <!--                                <i class="zmdi zmdi-person-add"></i> Add-->
+                <!--                            </button>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="c-item">-->
+                <!--                    <a href="#" class="ci-avatar">-->
+                <!--                            <img src="img/contacts/4.jpg" alt="" width=100px;>-->
+                <!--                        </a>-->
+
+                <!--                        <div class="c-info">-->
+                <!--                            <strong>Stella Flores</strong>-->
+                                            <!--<small>stella@example.com</small>-->
+                <!--                        </div>-->
+
+                <!--                        <div class="c-footer">-->
+                <!--                            <button class="btn btn-primary btn-lg btn-block" id="boton">-->
+                <!--                                <i class="zmdi zmdi-person-add"></i> Add-->
+                <!--                            </button>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--        </div>-->
+                                   
+                                    
+                <!--</div>-->
+                <p>&nbsp;&nbsp;</p>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <center><img src="templates/img/logo2.png" alt="" width=200px;></center>
+                </div>
+                <p>&nbsp;&nbsp;</p>
+                
+                <div class="lb-body">
+                    <form class="form-group fg-float" id="formLogin" action="member/login" method="post">
+                        <div class="fg-line">
+                            <input type="text" class="input-sm form-control fg-input" name="correo" id="email">
+                            <label class="fg-label">Email Address</label>
+                        </div>
+                        <div class="display-blank"></div>
+                        <div class="fg-line">
+                            <input type="password" class="input-sm form-control fg-input" name="password" id="password">
+                            <label class="fg-label">Password</label>
+                        </div><br><br>
+                        <button class="btn palette-Teal bg" type="submit">Sign in</button>
+                    </form>
+                        {{errorLogin}}
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

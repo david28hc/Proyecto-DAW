@@ -1,0 +1,48 @@
+.card{
+    margin-top: 8%;
+}
+.main-menu{
+    padding-top: 45%;
+}
+
+.btn:not(.palette-White):not(.btn-default) {
+    color: black;
+}
+
+.familyCap{
+    text-transform: capitalize;
+    color:black;
+}
+
+.paginationPropia {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 2%;
+}
+
+.paginationPropia a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.paginationPropia a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.paginationPropia a:hover:not(.active) {background-color: #ddd;}
+
+.fa-trash{
+    font-size:3em;
+}
+.fa-pencil-square-o{
+    font-size:3em;
+}

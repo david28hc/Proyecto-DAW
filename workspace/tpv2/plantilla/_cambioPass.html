@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="./app_images/favicon.ico">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Cambio de contraseña</h1>
+        <form method = 'POST'>
+            
+             <div class = 'filaForm'>
+                <label for="registroClave">Nueva Clave:</label>
+                 <input type="password" required  id='registroClave' name="clave"/>
+            </div>
+            
+            <div class = 'filaForm'>
+                <label for="registroClaveRep">Repetir Clave:</label>
+                <input type="password" required  id='registroClaveRep' name="claveRepetida"/>
+            </div>
+            
+            <input type="hidden" name="code" value = '{{codigo}}'/>
+            
+            <input type="hidden" name="accion" value = 'doCambioPass'/>
+            <input type="hidden" name="ruta" value='index'/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from byrushan.com/projects/mae/1-0/profile-photos.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2018 13:12:57 GMT -->
+<head>
+        <meta charset="utf-8">
+        <base href="{{base}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/lightgallery/dist/css/lightgallery.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+        <link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        
+        <link href="css/tpv/jquery-ui.css" rel="stylesheet">
+          <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+    </head>
+
+    <body data-ma-header="teal">
+        
+ 
+
+        <header id="header" class="media">
+
+            <div class="pull-left h-logo">
+                <a href="index-2.html" class="hidden-xs">
+                    TPV
+                    <small>caja</small>
+                </a>
+
+                <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+                    <div class="mc-wrap">
+                        <div class="mcw-line top palette-White bg"></div>
+                        <div class="mcw-line center palette-White bg"></div>
+                        <div class="mcw-line bottom palette-White bg"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+ 
+
+        <section id="main">
+            
+            <div id="modal-cliente">
+                <div class="card">
+                        <div class="card-header">
+                            <h2>Lista de Clientes <small></h2>
+                            <a href="#" id="cerrarmodalclient">Cerrar</a>
+                        </div>
+                        <div class="block-content collapse in">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID Cliente</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Tin</th>
+                            <th>Address</th>
+                            <th>Location</th>
+                            <th>Postal Code</th>
+                            <th>Province</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="selectclient">
+                    </tbody>
+                </table>
+            </div>
+                    </div>
+            </div>
+            
+            <aside id="s-main-menu" class="sidebar">
+                <div class="smm-header">
+                    <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+                </div>
+
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="index"><i class="zmdi zmdi-view-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="tpv/index"><i class="zmdi zmdi-shopping-cart-plus"></i> Acceso a Caja</a>
+                    </li>
+                    <li>
+                        <a href="clientes/listaclientes"><i class="zmdi zmdi-face"></i> Clientes</a>
+                    </li>
+                    <li>
+                        <a href="member/listarUsuarios"><i class="zmdi zmdi-accounts-alt"></i> Usuarios</a>
+                    </li>
+                    <li>
+                        <a href="family/listafamily"><i class="zmdi zmdi-cutlery"></i> Familias</a>
+                    </li>
+                    <li>
+                        <a href="product/listaproductos"><i class="zmdi zmdi-coffee"></i> Productos</a>
+                    </li>
+                    <li>
+                        <a href="index-2.html"><i class="zmdi zmdi-view-subtitles"></i> Listado Facturas</a>
+                    </li>
+                    <li>
+                        <a href="widgets.html"><i class="zmdi zmdi-trending-up"></i> Balances</a>
+                    </li>
+                </ul>
+            </aside>
+        
+            <section id="content">
+                <div class="container fondocaja">
+
+                    
+                    <div class="col-lg-6 tickets">
+                        
+                        <ul class="tab-nav tn-justified">
+                                <li class="waves-effect one active nuevo"><a href="tpv/index#">Nuevo Ticket</a></li>
+                                <li class="waves-effect two guardar"><a href="tpv/index#">Guardar Ticket</a></li>
+                            </ul>
+                            <ul class="tab-nav tn-justified">
+                                <li class="waves-effect three apuntar" id="apuntar"><a href="tpv/index#">Apuntar Ticket</a></li>
+                                <li class="waves-effect four facturar"><a href="tpv/index#">Facturar</a></li>
+                            </ul>
+    
+                        
+                        <div class="totalProductos">
+                                Total productos &#40;<h class="con">0</h>&#41;
+                            </div>
+                            
+                            
+                            <div class="tprodcuts">
+                            <table class="table" id="tablafactura">
+                                <thead>
+                                  <tr>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Precio Total</th>
+                                    <th>Editar</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="carr">
+                                    
+                                  
+                                  
+                                </tbody>
+                              </table>
+                              </div>
+                              
+                            
+                            
+                        <!--    <div class="prodList">-->
+                        <!--        <div class="nombrePro col-md-6">Barra 250g cocida en horno</div><div class="cant col-md-2">x1</div><div class="precioTotal col-md-2">0.90€</div><div class="precioTotal col-md-2">+</div>-->
+                        <!--        <div class="precioUnidad col-md-12">0.90€</div>-->
+                        <!--    </div>-->
+                        
+                        <!--<br><br>-->
+                            
+                        <!--    <hr style="border-top: 1px dashed #8c8b8b">-->
+                        
+                        
+                        <!--<div class="prodList">-->
+                        <!--        <div class="nombrePro col-md-8">Barra 450g cocida</div><div class="cant col-md-2">x1</div><div class="precioTotal col-md-2">1.00€</div>-->
+                        <!--        <div class="precioUnidad col-md-12">1.00€</div>-->
+                        <!--    </div>-->
+                            
+                        
+                        <br><br>
+                            
+                            <!--<hr style="border-top: 1px dashed #8c8b8b">-->
+                            
+
+                            <div class="totalCompra">
+                                A pagar = <h class="pre" id="apagar">0</h>€
+                            </div>
+                        
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="cant col-lg-6 productos">
+                        <div class="tabs">
+                          <ul>
+                            <li><a href="tpv/index#tabs-1">Pan</a></li>
+                            <li><a href="tpv/index#tabs-2">Bolleria</a></li>
+                            <li><a href="tpv/index#tabs-3">Croissanteria</a></li>
+                            <li><a href="tpv/index#tabs-4">Navidad</a></li>
+                            <li><a href="tpv/index#tabs-5">Otros</a></li>
+                          </ul>
+                          
+                          <div id="tabs-1">
+                             
+                             <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <div class="lightbox pan">
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+                          </div>
+                          
+                          <div id="tabs-2">
+                            
+                            <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <div class="lightbox bolleria">
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+                          </div>
+                          
+                          <div id="tabs-3">
+                            
+                            <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <div class="lightbox croissanteria">
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+                          </div>
+                          
+                          <div id="tabs-4">
+                            
+                            <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <div class="lightbox navidad">
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+                          </div>
+                          
+                          <div id="tabs-5">
+                            
+                            <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <div class="lightbox otros">
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                        
+                        <!--<div id="paquito">-->
+                            
+                        <!--</div>-->
+                        
+                        <!--<ul class="tab-nav tn-justified">
+                                <li class="waves-effect active"><a href="#">Pan</a></li>
+                                <li class="waves-effect"><a href="#">Bolleria</a></li>
+                                <li class="waves-effect"><a href="#">Croissanteria</a></li>
+                                <li class="waves-effect"><a href="#">Navidad</a></li>
+                                <li class="waves-effect"><a href="#">Otros</a></li>
+                        </ul>-->
+                        <!--<div class="pmb-block clearfix photos">-->
+                        <!--<div class="p-header">-->
+                        <!--<div class="lightbox">-->
+                                    
+                        <!--                <div class="lightbox-item p-item col-md-4 col-sm-6 col-xs-12">-->
+                        <!--                    <img src="media/pan2.jpg" alt="" />-->
+                        <!--                </div>-->
+    
+    
+                        <!--        </div>  -->
+                        <!--    </div>-->
+                        <!--    </div>-->
+                        
+                         <!--<div class="load-more m-t-30">-->
+                         <!--           <a href="#"><i class="zmdi zmdi-refresh-alt"></i> Load More...</a>-->
+                         <!--       </div>-->
+
+                    
+                    </div>
+                    
+
+<!--                    aqui-->
+                    
+                </div>
+            </section>
+
+            <footer id="footer">
+                Copyright &copy; 2018 Material Admin
+
+                <ul class="f-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </footer>
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        
+        
+        
+    
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+        <script>
+            $( ".tabs" ).tabs();
+        </script>
+        <script src="js/ajax.js"></script>
+        
+        
+        <!--Llamadas ajax-->
+        <script src="js/products.js"></script>
+        
+        
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/mae/1-0/profile-photos.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2018 13:12:57 GMT -->
+</html>

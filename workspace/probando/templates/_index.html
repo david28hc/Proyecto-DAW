@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <base href="{{base}}">
+        <title>pretty url</title>
+        <link href="../probando/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../probando/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="../probando/css/jumbo.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- jumbotron -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">pretty url</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                  <div class="form-group">
+                    <input type="text" placeholder="Correo electrónico" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" placeholder="Clave de acceso" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-success">Autentificación</button>
+                </form>
+              </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Pretty url</h1>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-primary btn-lg" href="h1" role="button">Admin &raquo;</a></p>
+          </div>
+        </div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              {{contenido}}
+            </div>
+            <hr>
+            <footer>
+              <p>&copy; 2017/18 Company, Inc.</p>
+            </footer>
+        </div> <!-- /container -->
+        <!-- jumbotron -->
+        <script src="../probando/js/jquery.min.js"></script>
+        <script src="../probando/js/bootstrap.min.js"></script>
+    </body>
+</html>

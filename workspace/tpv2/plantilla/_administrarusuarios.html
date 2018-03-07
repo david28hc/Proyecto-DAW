@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/x-icon" href="./app_images/favicon.ico">
+        <script type="text/javascript" src = "./js/admin.js"></script>
+        <title>Panel Administración</title>
+    </head>
+    <body>
+        
+        
+        
+        
+        
+    <div class = 'si_logueado'>
+        
+        <div class = 'menu'>
+            
+            <figure>
+               <img src='index.php?ruta=index&accion=veravatar' />  
+                <figcaption>{{correo}}</figcaption>
+            </figure>
+        
+            <nav>
+                <ul>
+                    <li><a href = "./">Inicio</a></li>
+                    <li><a href="?accion=editarusuario">Editar Perfil</a></li>
+                    <li>{{indexadministrador}}</li>
+                    <li><a href="?accion=cerrarsesion">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class = 'contenido'>
+            
+            <div class='tablaContenido'>
+                <h1>Administración</h1>
+                <h3 class = 'mensaje'>{{mensaje}}</h3>
+                
+                <h2>listado paginado de usuarios</h2>
+                <table class='usuarios'>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nick</th>
+                        <th>Correo</th>
+                        <th>Tipo</th>
+                        <th>Verificado</th>
+                        <th>Alta</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    {{lineasUsuario}}
+                </table>
+                
+                {{paginacion}}
+                
+                <a class='boton' href="?ruta=index&accion=administradornuevousuario">Crear Usuario</a>
+                
+            </div>
+            
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

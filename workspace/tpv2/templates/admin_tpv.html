@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <base href="{{base}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PanDePaso Admin</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        
+        <link href="css/fontawesome/css/font-awesome.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        
+        <!-- JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/confirmBorrado.js"></script>
+    </head>
+    <body data-ma-header="teal">
+        <header id="header" class="media">
+            <div class="pull-left h-logo">
+                <a href="./" class="hidden-xs">
+                    PanDePaso
+                    <small>Panel Administración</small>
+                </a>
+                
+                <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+                    <div class="mc-wrap">
+                        <div class="mcw-line top palette-White bg"></div>
+                        <div class="mcw-line center palette-White bg"></div>
+                        <div class="mcw-line bottom palette-White bg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="pull-right h-menu">
+                <li class="hm-search-trigger">
+                    <a href="#" data-ma-action="search-open">
+                        <i class="hm-icon zmdi zmdi-search"></i>
+                    </a>
+                </li>
+                
+                <li class="hm-alerts" data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                    <a href="#"><i class="hm-icon zmdi zmdi-notifications"></i></a>
+                </li>
+                <li class="dropdown hm-profile">
+                    <a data-toggle="dropdown" href="#">
+                        <img src="member/verfotosesion" alt="">
+                    </a>
+                    
+                    <ul class="dropdown-menu pull-right dm-icon">
+                        <li style="text-align: center;">
+                            {{usuario}}
+                        </li>
+                        <li>
+                            <a href="member/editarMember?id={{id_user}}"><i class="zmdi zmdi-account"></i> Ver perfil</a>
+                        </li>
+                        <li>
+                            <a href="member/insertarMember"><i class="zmdi zmdi-account"></i> Insertar Usuario</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="zmdi zmdi-settings"></i> Ajustes</a>
+                        </li>
+                        <li>
+                            <a href="member/logout"><i class="zmdi zmdi-time-restore"></i> Desconectar</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="media-body h-search">
+                <form class="p-relative">
+                    <input type="text" class="hs-input" placeholder="Buscar productos">
+                    <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
+                </form>
+            </div>
+            
+        </header>
+        
+        <section id="main">
+
+            <aside id="s-main-menu" class="sidebar">
+                <ul class="main-menu">
+                    <li>
+                        <a href="index"><i class="zmdi zmdi-view-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="tpv/index"><i class="zmdi zmdi-shopping-cart-plus"></i> Acceso a Caja</a>
+                    </li>
+                    <li>
+                        <a href="clientes/listaclientes"><i class="zmdi zmdi-face"></i> Clientes</a>
+                    </li>
+                    <li>
+                        <a href="member/listarUsuarios"><i class="zmdi zmdi-accounts-alt"></i> Usuarios</a>
+                    </li>
+                    <li>
+                        <a href="family/listafamily"><i class="zmdi zmdi-cutlery"></i> Familias</a>
+                    </li>
+                    <li>
+                        <a href="product/listaproductos"><i class="zmdi zmdi-coffee"></i> Productos</a>
+                    </li>
+                    <li>
+                        <a href="index-2.html"><i class="zmdi zmdi-view-subtitles"></i> Listado Facturas</a>
+                    </li>
+                    <li>
+                        <a href="widgets.html"><i class="zmdi zmdi-trending-up"></i> Balances</a>
+                    </li>
+                </ul>
+            </aside>
+            
+            <section id="content">
+                <div class="container">
+
+                    <div id="c-grid" class="clearfix" data-columns>
+                        <div class="card c-dark palette-Light-Blue bg">
+                                <div class="card-header">
+                                    <h2>Website Impressions <small>Consectetur Ultricies Porta Fringilla</small></h2>
+
+                                     <ul class="actions a-alt">
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="#">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body card-padding">
+                                    <h2 class="m-t-0 m-b-15 c-white">
+                                        <i class="zmdi zmdi-caret-up-circle m-r-5"></i>
+                                        987,453
+                                    </h2>
+
+                                    <div class="sparkline-1 text-center"></div>
+                                </div>
+                            </div>
+
+                        <div class="card c-dark palette-Green-A700 bg">
+                            <div class="card-header">
+                                <h2>Website Traffics <small>Nullam Adipiscing Pellentesque</small></h2>
+
+                                <ul class="actions a-alt">
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="#">Change Date Range</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Change Graph Type</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Other Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body card-padding">
+                                <h2 class="m-t-0 m-b-15 c-white">
+                                    <i class="zmdi zmdi-caret-up-circle m-r-5"></i>
+                                    356,785K
+                                </h2>
+                                <div class="sparkline-2 text-center"></div>
+                            </div>
+                        </div>
+
+                        <div class="card c-dark palette-Blue-Grey bg">
+                            <div class="card-header">
+                                <h2>Total Sales <small>Purus Malesuada Consectetur</small></h2>
+
+                                <ul class="actions a-alt">
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="#">Change Date Range</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Change Graph Type</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Other Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body card-padding">
+                                <h2 class="m-t-0 m-b-15 c-white">
+                                    <i class="zmdi zmdi-caret-down-circle m-r-5"></i>
+                                    $458,778
+                                </h2>
+                                <div class="sparkline-3 text-center"></div>
+                            </div>
+                        </div>
+            </section>
+            
+            <!-- LISTA USUARIOS ADMIN -->
+            <div class="block-content collapse in">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID Usuario</th>
+                            <th>Nombre</th>
+                            <th>Contraseña</th>
+                            <th>Borrar</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{listausuario}}
+                    </tbody>
+                </table>
+                {{rango}}
+            </div>
+            
+            
+            <footer id="footer">
+                Copyright &copy; 2018 Panaderia Admin
+
+                <ul class="f-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </footer>
+
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+        
+        
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/salvattore/dist/salvattore.min.js"></script>
+        
+        <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        
+        <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        
+        <script src="js/flot-charts/curved-line-chart.js"></script>
+        <script src="js/flot-charts/bar-chart.js"></script>
+        
+        <script src="js/charts.js"></script>
+        
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+</html>

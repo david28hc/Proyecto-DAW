@@ -1,0 +1,204 @@
+# Translation of WordPress - 4.9.x - Development in Spanish (Spain)
+# This file is distributed under the same license as the WordPress - 4.9.x - Development package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-02-26 08:54+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.6\n"
+"Language: en\n"
+"Project-Id-Version: WordPress - 4.9.x - Development\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#. translators: Translate this to the correct language tag for your locale, see
+#. https://www.w3.org/International/articles/language-tags/ for reference. Do
+#. not translate into your own language.
+#: wp-includes/general-template.php:704
+msgid "html_lang_attribute"
+msgstr "en-EN"
+
+#: FRONT-PAGE
+msgid "El mejor lugar para disfrutar"
+msgstr "The best place to enjoy"
+
+msgid "PANES Y BOLLERIA"
+msgstr "BREADS AND SWEETS"
+
+msgid "Nos esforzamos por mantener la coherencia, de modo que cada visita a nuestra panadería brinde la misma experiencia fiable y satisfactoria a la vez que ofrece una interesante variedad de productos."
+msgstr "We strive to maintain consistency, so that each visit to our bakery provides the same reliable and satisfying experience while offering an interesting variety of products."
+
+msgid "CONTACTO"
+msgstr "CONTACT"
+
+msgid "Hecho para ser compartido"
+msgstr "Made to be shared"
+
+msgid "PRUEBA LOS MEJORES SABORES"
+msgstr "TRY THE BEST FLAVORS"
+
+msgid "PAN"
+msgstr "BREAD"
+
+msgid "BOLLERIA"
+msgstr "SWEETS"
+
+msgid "CROISSANTS"
+msgstr "CROISSANTS"
+
+msgid "Nuestros panaderos trabajan todos los días para ofrecerte el pan más delicioso y recién horneado posible."
+msgstr "Our bakers work every day to offer the most delicious and freshly baked bread possible."
+
+msgid "Cupcakes, pasteles de cumpleaños, pasteles de chocolate y brownies: hornea algo para cada ocasión."
+msgstr "Cupcakes, birthday cakes, chocolate cakes and brownies: bakes something for every occasion."
+
+msgid "Estos croissants blanditos tienen un interior esponjoso y una corteza crujiente dorada."
+msgstr "These soft croissants have a fluffy interior and a crunchy golden crust."
+
+msgid "¿Qué tenemos?"
+msgstr "What we have?"
+
+msgid "PRODUCTOS MÁS VENDIDOS"
+msgstr "MOST SELLED PRODUCTS"
+
+msgid "Babka Combo Pack 3"
+msgstr "Babka Combo Pack 3"
+
+msgid "Babka con Chocolate"
+msgstr "Babka with Chocolate"
+
+msgid "Cookies Pack Combo"
+msgstr "Cookies Pack Combo"
+
+msgid "Trenza al horno con Chocolate"
+msgstr "Braid to the oven with Chocolate"
+
+msgid "Nuestra historia"
+msgstr "Our history"
+
+msgid "ACERCA DE NUESTRA EMPRESA"
+msgstr "ABOUT OUR COMPANY"
+
+msgid "Inaugurado en 1980, este espacio una vez pequeño ha crecido y se ha convertido en la principal panadería del área con su propio restaurante de servicio completo."
+msgstr "Opened in 1980, this once small space has grown and has become the leading bakery in the area with its own full-service restaurant."
+
+msgid "La panadería crea pan excepcional y platos favoritos para la infancia, como pasteles dulces, pasteles artísticos, tartas de temporada, galletas nostálgicas y viennoiserie. Los croissants han sido citados como los mejores de la ciudad en publicaciones como la revista Vancouver."
+msgstr "The bakery creates exceptional bread and favorite dishes for childhood, such as sweet cakes, artistic cakes, seasonal cakes, nostalgic cookies and viennoiserie. Croissants have been cited as the best in the city in publications such as Vancouver magazine."
+
+msgid "Todos los sándwiches se preparan en la casa y se pueden disfrutar para llevar o en una mesa en el encantador café de 16 asientos. Nuestro compromiso con la calidad nunca se ve comprometido."
+msgstr "All sandwiches are prepared in the house and can be enjoyed to take away or at a table in the charming 16-seat cafe. Our commitment to quality is never compromised."
+
+msgid "Productos producidos diariamente"
+msgstr "Products produced daily"
+
+msgid "Miembros en el equipo"
+msgstr "Members in the team"
+
+msgid "Tiendas en el mundo"
+msgstr "Stores in the world"
+
+msgid "Premios ganados"
+msgstr "Prizes won"
+
+msgid "ÚLTIMAS RECETAS"
+msgstr "LATEST RECIPES"
+
+#: NAV
+msgid "Home"
+msgstr "Home"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Nuestros productos"
+msgstr "Our products"
+
+msgid "Novedades"
+msgstr "News"
+
+msgid "Recetas"
+msgstr "Recipes"
+
+msgid "Contacto"
+msgstr "Contact"
+
+#: PRODUCTOS
+msgid "Service"
+msgstr "Servicio"
+
+#: CONTACTO
+msgid "ESTAMOS ABIERTOS LOS 7 DÍAS DE LA SEMANA. SERVIMOS PAN, BOLLERIA, CROISSANTS Y MÁS"
+msgstr "WE ARE OPEN 7 DAYS A WEEK. WE SERVE BREAD, SWEETS, CROISSANTS AND MORE"
+
+msgid "Somos ampliamente conocidos por nuestro delicioso pan, pasteles, postres y pasteles. Venga a visitar nuestra pequeña panadería tradicional y se quedará con nosotros por mucho tiempo."
+msgstr "We are widely known for our delicious bread, pastries, desserts and cakes. Come visit our small traditional bakery and you will stay with us for a long time."
+
+#: 404
+msgid "404 - Página no encontrada"
+msgstr "404 - Page not found"
+
+msgid "Volver a la página principal"
+msgstr "Return to main page"
+
+#: BLOG Y SINGLE
+msgid "Seguir leyendo..."
+msgstr "Read more..."
+
+msgid "Enviar"
+msgstr "Send"
+
+msgid "Deja un comentario"
+msgstr "Leave a comment"
+
+msgid "Nombre"
+msgstr "Name"
+
+msgid "EmailCorreo"
+msgstr "Email"
+
+msgid "Comentario..."
+msgstr "Comment..."
+
+msgid "Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *"
+msgstr "Your email address will not be published. Required fields are marked with *"
+
+#: SIDEBAR Y ARCHIVES
+msgid "Categorias"
+msgstr "Categories"
+
+msgid "Últimas entradas"
+msgstr "Last entries"
+
+msgid "Autores"
+msgstr "Authors"
+
+msgid "Etiquetas"
+msgstr "Tags"
+
+msgid "Páginas"
+msgstr "Pages"
+
+msgid "Buscar"
+msgstr "Search"
+
+msgid "Posts más visitados"
+msgstr "Most popular posts"
+
+msgid "Navegación"
+msgstr "Navigation"
+
+msgid "Posts por mes"
+msgstr "Posts monthly"
+
+msgid "RECETAS"
+msgstr "RECIPES"
+
+msgid "NOVEDADES"
+msgstr "NEWS"
+
+msgid "PRODUCTOS"
+msgstr "PRODUCTS"
+
